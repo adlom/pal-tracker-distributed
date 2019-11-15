@@ -68,3 +68,6 @@ run.pivotal.io
 dham@pivotal.io
 https://courses.education.pivotal.io/c/349803461/
 https://travis-ci.org/adlom/pal-tracker-distributed
+
+
+./gradlew applications:allocations-server:bootRun
