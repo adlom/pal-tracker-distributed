@@ -54,8 +54,17 @@ cf create-service p.mysql db-small {Database-Name}
 
  ./gradlew applications:backlog-server:dependencies
 
+ cd ~/workspace/assignment-submission
+
  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery \
      -PregistrationServerUrl=https://registration-pal-registration-jp.apps.evans.pal.pivotal.io \
      -PbacklogServerUrl=https://backlog-pal-backlog-jp.apps.evans.pal.pivotal.io \
      -PallocationsServerUrl=https://allocations-pal-allocations-jp.apps.evans.pal.pivotal.io \
      -PtimesheetsServerUrl=https://timesheets-pal-timesheets-jp.apps.evans.pal.pivotal.io
+
+DOCUMENTATION
+jpmc-waveland.education.pivotal.io
+run.pivotal.io
+dham@pivotal.io
+https://courses.education.pivotal.io/c/349803461/
+https://travis-ci.org/adlom/pal-tracker-distributed
