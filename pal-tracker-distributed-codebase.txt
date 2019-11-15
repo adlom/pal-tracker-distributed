@@ -46,3 +46,10 @@ or
 
 --to gets logs from cli
 cf logs pal-tracker
+
+cf create-service p.mysql db-small {Database-Name}
+
+
+ cf create-service p-service-registry standard tracker-service-registry -b p-spring-cloud-services
+
+ ./gradlew applications:backlog-server:dependencies
