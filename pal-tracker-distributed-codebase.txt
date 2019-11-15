@@ -53,3 +53,9 @@ cf create-service p.mysql db-small {Database-Name}
  cf create-service p-service-registry standard tracker-service-registry -b p-spring-cloud-services
 
  ./gradlew applications:backlog-server:dependencies
+
+ ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery \
+     -PregistrationServerUrl=https://registration-pal-registration-jp.apps.evans.pal.pivotal.io \
+     -PbacklogServerUrl=https://backlog-pal-backlog-jp.apps.evans.pal.pivotal.io \
+     -PallocationsServerUrl=https://allocations-pal-allocations-jp.apps.evans.pal.pivotal.io \
+     -PtimesheetsServerUrl=https://timesheets-pal-timesheets-jp.apps.evans.pal.pivotal.io
